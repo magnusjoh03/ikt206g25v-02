@@ -39,8 +39,7 @@ namespace StringLibraryTest
         public void DirectCallWithNullOrEmpty()
         {
             // Tests that we expect to return false.
-            string[] words = { "alphabet", "zebra", "abc", "αυτοκινητοβιομηχανία", "государство",
-                   "1234", ".", ";", " " };
+            string?[] words = { string.Empty, null };
             foreach (var word in words)
             {
                 bool result = StringLibrary.StartsWithUpper(word);
